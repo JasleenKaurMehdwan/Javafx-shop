@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<GridPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment4.Assignment4Controller">
+    
+  <columnConstraints>
+         <ColumnConstraints percentWidth="50.0"/>
+         <ColumnConstraints percentWidth="25.0"/>
+         <ColumnConstraints percentWidth="25.0"/>
+    </columnConstraints>
+    
+    <padding>
+        <Insets top="20" bottom="20" left="20" right="20"/>
+    </padding>
+    <children>
+        <Label text="Enter the quantites you need in the textboxes" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="txt1" GridPane.rowIndex="1" GridPane.columnIndex="0"  > 
+        <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </TextField>
+        <CheckBox fx:id="chk1"  onAction="#chkFirst" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+          <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>  
+        </CheckBox> 
+        <Label text="Mouse @$10 each"  GridPane.rowIndex="1" GridPane.columnIndex="2"  > 
+        <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </Label>
+        
+        
+        <TextField fx:id="txt2" GridPane.rowIndex="2" GridPane.columnIndex="0" > 
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </TextField>
+        
+        <CheckBox fx:id="chk2"  onAction="#chkSecond" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </CheckBox>
+        <Label text="USB @$20 each"  GridPane.rowIndex="2" GridPane.columnIndex="2"  >
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </Label> 
+        
+           
+        <TextField fx:id="txt3" GridPane.rowIndex="3" GridPane.columnIndex="0"> 
+        <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </TextField>
+        <CheckBox fx:id="chk3"  onAction="#chkThird" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </CheckBox>
+        <Label text="Charger @$15 each"  GridPane.rowIndex="3" GridPane.columnIndex="2">
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </Label> 
+        
+        <Label text=" Enter the Discount on these items" GridPane.rowIndex="4"  GridPane.columnIndex="0">
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </Label>
+        <TextField fx:id="txt4" GridPane.rowIndex="4" GridPane.columnIndex="1">
+            <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </TextField>
+        <CheckBox fx:id="chk4" onAction="#chkDiscount" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+        <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+        </CheckBox>
+        
+       <Button text="TOTAL" fx:id="btn1" onAction="#total"  GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.halignment="CENTER">
+       <GridPane.margin>
+            <Insets  bottom="15"  />
+        </GridPane.margin>   
+       </Button>
+       <Button text="RESET" fx:id="btn2" mnemonicParsing="false" onAction="#clear"  GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+           <GridPane.margin>
+            <Insets  bottom="15"/>
+        </GridPane.margin>  
+       </Button> 
+       <Button text="EXIT" fx:id="btn3"  onAction="#exit" GridPane.rowIndex="5" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+           <GridPane.margin>
+            <Insets  bottom="15" right="15"  />
+        </GridPane.margin>   
+       </Button>
+       
+
+       <TextArea fx:id="textArea" GridPane.rowIndex="8"  GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    </children>
+</GridPane>
